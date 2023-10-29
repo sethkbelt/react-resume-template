@@ -69,13 +69,13 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Seth Konynenbelt`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a Grand rapids based <strong className="text-stone-100">Embedded Software Engineer</strong>. I am currently working
+        at <strong className="text-stone-100">DornerWorks</strong>as a co-op in the FPGA group. I get to interact
+        with custom hardware, FPGA, and software designs nearly every day as I develop my skills in the vast embedded engineering world.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
