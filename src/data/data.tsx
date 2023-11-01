@@ -13,7 +13,7 @@ import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
+import heroImage from '../images/try1.jpeg';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
@@ -73,20 +73,19 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Grand rapids based <strong className="text-stone-100">Embedded Software Engineer</strong>. I am currently working
+        I'm a Grand Rapids based <strong className="text-stone-100">Embedded Software Engineer</strong>. I am currently working
         at <strong className="text-stone-100">DornerWorks</strong>as a co-op in the FPGA group. I get to interact
         with custom hardware, FPGA, and software designs nearly every day as I develop my skills in the vast embedded engineering world.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time time, you can find me wrestling on the Grand Valley State University wrestling team,
+        playing pickleball, backpacking in the mountains, or playing Euchre.
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: './files/resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -104,16 +103,28 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: (
+    <>
+      <p className="prose-sm text-stone-100 sm:prose-base lg:prose-base white-space: pre-line">
+        I am a student athlete competing in wrestling at GVSU while studying computer engineering. I chose computer
+        engineering as my major because I most enjoy working in technologies where hardware and software interact. This means I
+        get to touch a lot of aspects of embedded development in areas such as communication protocols, C development, FPGA, scripting
+        languages, hardware bring up, and more. Recently, I have been expanding these skills to become a stronger developer with personal projects
+        working with development boards, website building, and back end develoment for tools I am interested in.
+      </p>
+       <p className="prose-sm text-stone-100 sm:prose-base lg:prose-base">
+         I am currently seeking employment for a full time role as a software engineer, or similar job title. I am open to re-locating
+         for an exciting opportunity.
+       </p>
+     </>
+  ),
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    { label: 'Location', text: 'Grand Rapids, MI', Icon: MapIcon },
+    { label: 'Age', text: '22', Icon: CalendarIcon },
+    { label: 'Employment Eligibility', text: 'U.S. Citizen', Icon: FlagIcon },
+    { label: 'Interests', text: 'Wrestling, Pickleball, Books, Card Games', Icon: SparklesIcon },
+    { label: 'Study', text: 'Grand Valley State University, (GPA : 3.93)', Icon: AcademicCapIcon },
+    { label: 'Employment', text: 'DornerWorks Ltd (Co-Op)', Icon: BuildingOffice2Icon },
   ],
 };
 
@@ -268,10 +279,25 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'Expected Graduation August 2024',
+    location: 'Grand Valley State University',
+    title: 'Computer Engineering, B.S.E',
+    content:
+      <p>
+        Overall GPA : 3.93
+        <p>
+          Minors : Computer Science and Math
+          <p></p>
+        </p>
+        At GVSU I have been able to design, build, and evaluate hardware and software sytems. The 
+        computer engineering program involves both electrical engineering with computer science disciplines 
+        to solve problems with applications in computing systems, embedded software, custom hardware,
+        consumer applications, and more. Along with my studies, I am currently a student athlete 
+        competing in collegiate wrestling. My current accolades are 3x NCWA All-Academic Team and 
+        3x NCWA All-American. I was the GVSU Wrestling Club President and captain, and 
+        now compete on the D2 varsity team. I have also served as the GVSU Young Life Vice
+        President. 
+      </p>,
   },
   {
     date: 'March 2003',
@@ -336,27 +362,27 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'I would love to hear from you! You can reach me best by emailing me or contacting me through LinkedIn',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'sethkbelts@gmail.com',
+      href: 'mailto:sethkbelts@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Grand Rapids, Michigan',
+      href: 'https://www.google.ca/maps/place/Grand+Rapids,+MI/@42.9563287,-85.7426611,12z/data=!3m1!4b1!4m6!3m5!1s0x88185460bb502815:0xa593aacb1bd3a8d0!8m2!3d42.9633599!4d-85.6680863!16zL20vMHY5cWc?entry=ttu',
     },
     {
       type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: '@sethkbelt',
+      href: 'https://www.instagram.com/sethkbelt/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'sethkbelt',
+      href: 'https://github.com/sethkbelt',
     },
   ],
 };
@@ -365,9 +391,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx' },
+  { label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker' },
+  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/' },
+  { label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/' },
+  { label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx' },
 ];
