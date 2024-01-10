@@ -11,20 +11,20 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+//import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+//import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/try1.jpeg';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import porfolioImage1 from '../images/portfolio/trace.png';
+import porfolioImage2 from '../images/portfolio/22FinalProject.png';
+import porfolioImage3 from '../images/portfolio/163Project1.png';
+import porfolioImage4 from '../images/portfolio/163Project2.png';
+import porfolioImage5 from '../images/portfolio/163Project3.png';
+import porfolioImage6 from '../images/portfolio/cis163proj1.png';
+import porfolioImage7 from '../images/portfolio/egr326ProjectPCB.png';
+import porfolioImage8 from '../images/portfolio/nexysA7.jpeg';
+import porfolioImage9 from '../images/portfolio/robosockeyRobot.jpg';
+import porfolioImage10 from '../images/portfolio/smartmirrorFront.png';
+import porfolioImage11 from '../images/portfolio/trace.png';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -34,7 +34,7 @@ import {
   Hero,
   HomepageMeta,
   PortfolioItem,
-  SkillGroup,
+  //SkillGroup,
   Social,
   TestimonialSection,
   TimelineItem,
@@ -73,8 +73,8 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Grand Rapids based <strong className="text-stone-100">Embedded Software Engineer</strong>. I am currently working
-        at <strong className="text-stone-100">DornerWorks</strong>as a co-op in the FPGA group. I get to interact
+        I'm a Grand Rapids based <strong className="text-stone-100">Embedded Software Engineer Co-Op</strong>. I am currently working
+        at <strong className="text-stone-100">DornerWorks</strong> in the FPGA group, mainly working with software. I get to interact
         with custom hardware, FPGA, and software designs nearly every day as I develop my skills in the vast embedded engineering world.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -85,7 +85,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: './files/resume.pdf',
+      href: './files/SethKonynenbeltResume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -110,13 +110,13 @@ export const aboutData: About = {
         engineering as my major because I most enjoy working in technologies where hardware and software interact. This means I
         get to touch a lot of aspects of embedded development in areas such as communication protocols, C development, FPGA, scripting
         languages, hardware bring up, and more. Recently, I have been expanding these skills to become a stronger developer with personal projects
-        working with development boards, website building, and back end develoment for tools I am interested in.
+        working with development boards, website building, and develoment with tools I am interested in.
       </p>
-       <p className="prose-sm text-stone-100 sm:prose-base lg:prose-base">
-         I am currently seeking employment for a full time role as a software engineer, or similar job title. I am open to re-locating
-         for an exciting opportunity.
-       </p>
-     </>
+      <p className="prose-sm text-stone-100 sm:prose-base lg:prose-base">
+        I am currently seeking employment for a full time role as a software engineer, or similar job title. I am open to re-locating
+        for an exciting opportunity.
+      </p>
+    </>
   ),
   aboutItems: [
     { label: 'Location', text: 'Grand Rapids, MI', Icon: MapIcon },
@@ -131,13 +131,13 @@ export const aboutData: About = {
 /**
  * Skills section
  */
-export const skills: SkillGroup[] = [
+/*export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Embedded Software',
     skills: [
       {
         name: 'English',
-        level: 10,
+        level: 5,
       },
       {
         name: 'French',
@@ -207,69 +207,69 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Embedded Development',
+    description: 'Embedded Musical Instrument and LCD Display',
+    url: 'https://github.com/sethkbelt',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Verilog',
+    description: 'Verilog Based Vending Machine',
+    url: 'https://github.com/sethkbelt',
     image: porfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Timers',
+    description: 'Day Counter and Java Project',
+    url: 'https://github.com/sethkbelt',
     image: porfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'AI Chess',
+    description: 'Chess with low-level AI',
+    url: 'https://github.com/sethkbelt',
     image: porfolioImage4,
   },
   {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Gaming Database',
+    description: 'Java based data base school project',
+    url: 'https://github.com/sethkbelt',
     image: porfolioImage5,
   },
   {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Dice Game',
+    description: 'Simple dice game with UI components',
+    url: 'https://github.com/sethkbelt',
     image: porfolioImage6,
   },
   {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Embedded Development',
+    description: 'Embedded Musical Instrument with custom PCB',
+    url: 'https://github.com/sethkbelt',
     image: porfolioImage7,
   },
   {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'VHDL and RISC-V',
+    description: 'MIPS Assembly, VHDL, and C RISC-V Peripheral Work',
+    url: 'https://github.com/sethkbelt',
     image: porfolioImage8,
   },
   {
     title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    description: 'Arduino based obstacle weaving and goal scoring robot',
+    url: 'https://github.com/sethkbelt',
     image: porfolioImage9,
   },
   {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Rasberyy Pi Python Smart Mirror',
+    description: 'Smart Mirror implementation on Rasberry Pi',
+    url: 'https://github.com/sethkbelt',
     image: porfolioImage10,
   },
   {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Circuit Design and Layout',
+    description: 'PCB Circuit design of audio mixer and amplifier',
+    url: 'https://github.com/sethkbelt',
     image: porfolioImage11,
   },
 ];
@@ -289,44 +289,51 @@ export const education: TimelineItem[] = [
           Minors : Computer Science and Math
           <p></p>
         </p>
-        At GVSU I have been able to design, build, and evaluate hardware and software sytems. The 
-        computer engineering program involves both electrical engineering with computer science disciplines 
+        <br />At GVSU I have been able to design, build, and evaluate hardware and software sytems. The
+        computer engineering program involves both electrical engineering with computer science disciplines
         to solve problems with applications in computing systems, embedded software, custom hardware,
-        consumer applications, and more. Along with my studies, I am currently a student athlete 
-        competing in collegiate wrestling. My current accolades are 3x NCWA All-Academic Team and 
-        3x NCWA All-American. I was the GVSU Wrestling Club President and captain, and 
+        consumer applications, and more. <br /><br />Along with my studies, I am currently a student athlete
+        competing in collegiate wrestling. My current accolades are 3x NCWA All-Academic Team and
+        3x NCWA All-American. I was the GVSU Wrestling Club President and captain, and
         now compete on the D2 varsity team. I have also served as the GVSU Young Life Vice
-        President. 
+        President.
       </p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
+  }
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'May 2022 – Current',
+    location: 'DornerWorks Ltd.',
+    title: 'Embedded Engineer Co-Op',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        - Worked with FPGA, embedded C in bare metal and freeRTOS, hardware, and scripting to spearhead DornerWorks first IP owned development board and demonstration <br />
+        -	Wide range of projects working with Vivado simulation, VHDL modules, embedded C, hardware test plans, networking, communication protocols, IP development, and scripting
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'May 2021 - August 2021',
+    location: 'Wilderness Ranch in Creede, Colorado',
+    title: 'Backpacking Guide',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        -	Led groups of 8-16 high schoolers safely through the backcountry<br />
+        -	Received medical and leadership training to ensure safely and lead effectively
+
+      </p>
+    ),
+  },
+  {
+    date: 'April 2017 - October 2020',
+    location: 'Kbelts Site Services',
+    title: 'Small Business Owner',
+    content: (
+      <p>
+        -	Owned, operated, and managed a lawn mowing business<br />
+        -	Developed time management and organizational skills needed to operate a business<br />
+        -	Worked one on one with clients to guarantee satisfaction with the services provided
       </p>
     ),
   },
@@ -361,7 +368,7 @@ export const testimonial: TestimonialSection = {
  */
 
 export const contact: ContactSection = {
-  headerText: 'Get in touch.',
+  headerText: 'Get in touch. The form below is not currently implemented, coming soon!',
   description: 'I would love to hear from you! You can reach me best by emailing me or contacting me through LinkedIn',
   items: [
     {
@@ -391,9 +398,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx' },
-  { label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker' },
-  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/' },
-  { label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/' },
-  { label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx' },
+  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/sethkbelt' },
+  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/seth-konynenbelt-056287221/'},
+  { label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/sethkbelt/'},
 ];
