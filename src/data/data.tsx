@@ -120,12 +120,12 @@ export const aboutData: About = {
     </>
   ),
   aboutItems: [
-    { label: 'Location', text: 'Grand Rapids, MI', Icon: MapIcon },
-    { label: 'Age', text: '23', Icon: CalendarIcon },
-    { label: 'Employment Eligibility', text: 'U.S. Citizen', Icon: FlagIcon },
-    { label: 'Interests', text: 'Wrestling, Pickleball, Books, Card Games', Icon: SparklesIcon },
-    { label: 'Study', text: 'Grand Valley State University, (GPA : 3.93)', Icon: AcademicCapIcon },
-    { label: 'Employment', text: 'DornerWorks Ltd (Co-Op)', Icon: BuildingOffice2Icon },
+    {label: 'Location', text: 'Grand Rapids, MI', Icon: MapIcon},
+    {label: 'Age', text: '23', Icon: CalendarIcon},
+    {label: 'Employment Eligibility', text: 'U.S. Citizen', Icon: FlagIcon},
+    {label: 'Interests', text: 'Wrestling, Pickleball, Books, Card Games', Icon: SparklesIcon},
+    {label: 'Study', text: 'Grand Valley State University, (GPA : 3.93)', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'DornerWorks Ltd (Co-Op)', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -212,67 +212,67 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'Embedded Musical Instrument and LCD Display',
     url: 'https://github.com/sethkbelt',
     image: porfolioImage1,
-  },
+ },
   {
     title: 'Verilog',
     description: 'Verilog Based Vending Machine',
     url: 'https://github.com/sethkbelt',
     image: porfolioImage2,
-  },
+ },
   {
     title: 'Timers',
     description: 'Day Counter and Java Project',
     url: 'https://github.com/sethkbelt',
     image: porfolioImage3,
-  },
+ },
   {
     title: 'AI Chess',
     description: 'Chess with low-level AI',
     url: 'https://github.com/sethkbelt',
     image: porfolioImage4,
-  },
+ },
   {
     title: 'Gaming Database',
     description: 'Java based data base school project',
     url: 'https://github.com/sethkbelt',
     image: porfolioImage5,
-  },
+ },
   {
     title: 'Dice Game',
     description: 'Simple dice game with UI components',
     url: 'https://github.com/sethkbelt',
     image: porfolioImage6,
-  },
+ },
   {
     title: 'Embedded Development',
     description: 'Embedded Musical Instrument with custom PCB',
     url: 'https://github.com/sethkbelt',
     image: porfolioImage7,
-  },
+ },
   {
     title: 'VHDL and RISC-V',
     description: 'MIPS Assembly, VHDL, and C RISC-V Peripheral Work',
     url: 'https://github.com/sethkbelt',
     image: porfolioImage8,
-  },
+ },
   {
     title: 'Autonomous Robot',
     description: 'Arduino based obstacle weaving and goal scoring robot',
     url: 'https://github.com/sethkbelt',
     image: porfolioImage9,
-  },
+ },
   {
     title: 'Rasberyy Pi Python Smart Mirror',
     description: 'Smart Mirror implementation on Rasberry Pi',
     url: 'https://github.com/sethkbelt',
     image: porfolioImage10,
-  },
+ },
   {
     title: 'Circuit Design and Layout',
     description: 'PCB Circuit design of audio mixer and amplifier',
     url: 'https://github.com/sethkbelt',
     image: porfolioImage11,
-  },
+ },
 ];
 
 /**
@@ -298,7 +298,7 @@ export const education: TimelineItem[] = [
         now compete on the D2 varsity team. I have also served as the GVSU Young Life Vice
         President.
       </p>,
-  }
+ }
 ];
 
 export const experience: TimelineItem[] = [
@@ -314,7 +314,7 @@ export const experience: TimelineItem[] = [
   - Enhanced the front-end GUI in C++ and Python by integrating a data visualization component into the layout<br />
       </p>
     ),
-  },
+ },
   {
     date: 'Jan 2023 – May 2023',
     location: 'DornerWorks Ltd.',
@@ -326,7 +326,7 @@ export const experience: TimelineItem[] = [
   - Debugged sensor system system architecture and design Xilinx Vivado simulation
       </p>
     ),
-  },
+ },
   {
     date: 'May 2022 – Aug 2022',
     location: 'DornerWorks Ltd.',
@@ -338,7 +338,7 @@ export const experience: TimelineItem[] = [
   - Ported an outdated chip design to the new chipset (Zynq Ultrascale+) in VHDL
       </p>
     ),
-  },
+ },
 
   {
     date: 'May 2021 - August 2021',
@@ -351,7 +351,7 @@ export const experience: TimelineItem[] = [
   - Developed effective planning and organization crucial for business operations<br />
       </p>
     ),
-  },
+ },
 
   {
     date: 'April 2017 - October 2020',
@@ -364,7 +364,7 @@ export const experience: TimelineItem[] = [
   - Developed effective planning and organization crucial for business operations<br />
       </p>
     ),
-  },
+ },
 ];
 
 
@@ -379,7 +379,7 @@ export const testimonial: TestimonialSection = {
       name: 'Nicholas Pahl, DornerWorks PM',
       text: 'Seth came across many unexpected hurdles with the hardware and found great solutions quickly that kept development moving and prevented a second costly board spin... Seth’s work on bringing up and prototyping the TSN Development Board will enable DornerWorks to demonstrate, test, and sell our TSN IP for years to come. I could carry on about Seth’s technical skill across the TSN Development Board project and the rest of histime at DornerWorks. His ability to understand the task at hand, quickly come up to speed, effectively communicate, and efficiently complete the work makes him a model Co-op.',
       //image: profilepic,
-    }
+   }
   ],
 };
 
@@ -395,22 +395,22 @@ export const contact: ContactSection = {
       type: ContactType.Email,
       text: 'sethkbelts@gmail.com',
       href: 'mailto:sethkbelts@gmail.com',
-    },
+   },
     {
       type: ContactType.Location,
       text: 'Grand Rapids, Michigan',
       href: 'https://www.google.ca/maps/place/Grand+Rapids,+MI/@42.9563287,-85.7426611,12z/data=!3m1!4b1!4m6!3m5!1s0x88185460bb502815:0xa593aacb1bd3a8d0!8m2!3d42.9633599!4d-85.6680863!16zL20vMHY5cWc?entry=ttu',
-    },
+   },
     {
       type: ContactType.Instagram,
       text: '@sethkbelt',
       href: 'https://www.instagram.com/sethkbelt/',
-    },
+   },
     {
       type: ContactType.Github,
       text: 'sethkbelt',
       href: 'https://github.com/sethkbelt',
-    },
+   },
   ],
 };
 
@@ -418,7 +418,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/sethkbelt' },
-  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/seth-konynenbelt-056287221/'},
-  { label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/sethkbelt/'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/sethkbelt'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/seth-konynenbelt-056287221/'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/sethkbelt/'},
 ];
