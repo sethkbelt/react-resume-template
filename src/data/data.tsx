@@ -26,7 +26,8 @@ import porfolioImage9 from '../images/portfolio/robosockeyRobot.jpg';
 import porfolioImage10 from '../images/portfolio/smartmirrorFront.png';
 import porfolioImage11 from '../images/portfolio/trace.png';
 import profilepic from '../images/profilepic.jpg';
-import testimonialImage from '../images/testimonial.webp';
+// import dornerworksImage from  '../images/dornerworkslogo.png';
+import testimonialImage from '../images/gvsulogo2.png';
 import {
   About,
   ContactSection,
@@ -39,6 +40,7 @@ import {
   TestimonialSection,
   TimelineItem,
 } from './dataDef';
+// import { profile } from 'console';
 
 /**
  * Page meta data
@@ -73,19 +75,18 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Grand Rapids based <strong className="text-stone-100">Embedded Software Engineer Co-Op</strong>. I am currently working
-        at <strong className="text-stone-100">DornerWorks</strong> in the FPGA group, mainly working with software. I get to interact
-        with custom hardware, FPGA, and software designs nearly every day as I develop my skills in the vast embedded engineering world.
+        I'm an Austin based <strong className="text-stone-100">Embedded Software Engineer </strong> who just finished his degree at
+        Grand Valley State University. I love working with custom hardware, FPGA, and software designs as I develop my skills in embedded engineering.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can find me wrestling on the Grand Valley State University wrestling team,
+        In my free time time, you can find me competing as a collegiate athlete in wrestling,
         playing pickleball, backpacking in the mountains, or playing Euchre.
       </p>
     </>
   ),
   actions: [
     {
-      href: './files/SethKonynenbeltResume.pdf',
+      href: './files/Konynenbelt_Seth_Resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -120,7 +121,7 @@ export const aboutData: About = {
   ),
   aboutItems: [
     { label: 'Location', text: 'Grand Rapids, MI', Icon: MapIcon },
-    { label: 'Age', text: '22', Icon: CalendarIcon },
+    { label: 'Age', text: '23', Icon: CalendarIcon },
     { label: 'Employment Eligibility', text: 'U.S. Citizen', Icon: FlagIcon },
     { label: 'Interests', text: 'Wrestling, Pickleball, Books, Card Games', Icon: SparklesIcon },
     { label: 'Study', text: 'Grand Valley State University, (GPA : 3.93)', Icon: AcademicCapIcon },
@@ -255,7 +256,7 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage8,
   },
   {
-    title: 'Project title 9',
+    title: 'Autonomous Robot',
     description: 'Arduino based obstacle weaving and goal scoring robot',
     url: 'https://github.com/sethkbelt',
     image: porfolioImage9,
@@ -284,11 +285,10 @@ export const education: TimelineItem[] = [
     title: 'Computer Engineering, B.S.E',
     content:
       <p>
-        Overall GPA : 3.93
-        <p>
-          Minors : Computer Science and Math
-          <p></p>
-        </p>
+        Overall GPA : 3.93 <br/>
+        2024 GVSU Computer Engineering Student of the Year<br/>
+        NCAA D2 Collegiate Wrestling <br/>
+        Minor in Computer Science and Math <br/>
         <br />At GVSU I have been able to design, build, and evaluate hardware and software sytems. The
         computer engineering program involves both electrical engineering with computer science disciplines
         to solve problems with applications in computing systems, embedded software, custom hardware,
@@ -303,41 +303,71 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'May 2022 – Current',
+    date: 'Oct 2023 – Dec 2023',
     location: 'DornerWorks Ltd.',
-    title: 'Embedded Engineer Co-Op',
+    title: 'Embedded Engineer Co-Op 3',
     content: (
       <p>
-        - Worked with FPGA, embedded C in bare metal and freeRTOS, hardware, and scripting to spearhead DornerWorks first IP owned development board and demonstration <br />
-        -	Wide range of projects working with Vivado simulation, VHDL modules, embedded C, hardware test plans, networking, communication protocols, IP development, and scripting
+  - Developed the first IP-owned Time Sensitive Networking development board demonstration as the core software engineer through collaboration with the hardware, software, and FPGA teams<br />
+  - Expanded functionality for Zynq UltraScale+ MPSoC and Zynq-7000 networking solutions in C and VHDL<br />
+  - Contributed to writing and completing hardware test plans for multiple custom hardware designs<br />
+  - Enhanced the front-end GUI in C++ and Python by integrating a data visualization component into the layout<br />
       </p>
     ),
   },
   {
-    date: 'May 2021 - August 2021',
-    location: 'Wilderness Ranch in Creede, Colorado',
-    title: 'Backpacking Guide',
+    date: 'Jan 2023 – May 2023',
+    location: 'DornerWorks Ltd.',
+    title: 'Embedded Engineer Co-Op 2',
     content: (
       <p>
-        -	Led groups of 8-16 high schoolers safely through the backcountry<br />
-        -	Received medical and leadership training to ensure safely and lead effectively
-
+  - Improved a sensor system by developing a Bus Functional Model in VHDL to enhance the timing diagram<br />
+  - Modeled sensor data in Python to understand and fix SPI protocol communication bus<br />
+  - Debugged sensor system system architecture and design Xilinx Vivado simulation
       </p>
     ),
   },
+  {
+    date: 'May 2022 – Aug 2022',
+    location: 'DornerWorks Ltd.',
+    title: 'Embedded Engineer Co-Op 1',
+    content: (
+      <p>
+  - Created a demonstration with a Time of Flight laser ranging sensor in C using the I2C protocol<br />
+  - Updated a front-end GUI in Python by adding a relevant data visualization display to the design<br />
+  - Ported an outdated chip design to the new chipset (Zynq Ultrascale+) in VHDL
+      </p>
+    ),
+  },
+
+  {
+    date: 'May 2021 - August 2021',
+    location: 'Young Life',
+    title: 'Backpacking Guide',
+    content: (
+      <p>
+  - Founded, owned, and operated a successful lawn-mowing small business<br />
+  - Cultivated strong client relationships, ensuring exceptional service and client satisfaction<br />
+  - Developed effective planning and organization crucial for business operations<br />
+      </p>
+    ),
+  },
+
   {
     date: 'April 2017 - October 2020',
     location: 'Kbelts Site Services',
     title: 'Small Business Owner',
     content: (
       <p>
-        -	Owned, operated, and managed a lawn mowing business<br />
-        -	Developed time management and organizational skills needed to operate a business<br />
-        -	Worked one on one with clients to guarantee satisfaction with the services provided
+  - Founded, owned, and operated a successful lawn-mowing small business<br />
+  - Cultivated strong client relationships, ensuring exceptional service and client satisfaction<br />
+  - Developed effective planning and organization crucial for business operations<br />
       </p>
     ),
   },
 ];
+
+
 
 /**
  * Testimonial section
@@ -346,20 +376,10 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
-    },
-    {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
-    },
+      name: 'Nicholas Pahl, DornerWorks PM',
+      text: 'Seth came across many unexpected hurdles with the hardware and found great solutions quickly that kept development moving and prevented a second costly board spin... Seth’s work on bringing up and prototyping the TSN Development Board will enable DornerWorks to demonstrate, test, and sell our TSN IP for years to come. I could carry on about Seth’s technical skill across the TSN Development Board project and the rest of histime at DornerWorks. His ability to understand the task at hand, quickly come up to speed, effectively communicate, and efficiently complete the work makes him a model Co-op.',
+      //image: profilepic,
+    }
   ],
 };
 
@@ -368,8 +388,8 @@ export const testimonial: TestimonialSection = {
  */
 
 export const contact: ContactSection = {
-  headerText: 'Get in touch. The form below is not currently implemented, coming soon!',
-  description: 'I would love to hear from you! You can reach me best by emailing me or contacting me through LinkedIn',
+  headerText: 'I would love to get in touch. The form below is not currently implemented, but coming soon!',
+  description: 'You can reach me best by emailing me with my email link below',
   items: [
     {
       type: ContactType.Email,
