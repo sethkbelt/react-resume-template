@@ -28,6 +28,8 @@ import profilepic from '../images/profilepic.jpg';
 //import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 //import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/try1.jpeg';
+//import resumePDF from '/Konynenbelt_Seth_Resume.pdf';
+
 import {
   About,
   ContactSection,
@@ -86,7 +88,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: './files/Konynenbelt_Seth_Resume.pdf',
+      href: '/Konynenbelt_Seth_Resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -110,17 +112,16 @@ export const aboutData: About = {
         I am a student athlete competing in wrestling at GVSU while studying computer engineering. I chose computer
         engineering as my major because I most enjoy working in technologies where hardware and software interact. This means I
         get to touch a lot of aspects of embedded development in areas such as communication protocols, C development, FPGA, scripting
-        languages, hardware bring up, and more. Recently, I have been expanding these skills to become a stronger developer with personal projects
-        working with development boards, website building, and develoment with tools I am interested in.
+        languages, hardware bring up, and more. Recently, I have been expanding these skills to become a stronger developer by working with
+        development boards, custom daughter boards, website building, and learning about new tools I am interested in.
       </p>
       <p className="prose-sm text-stone-100 sm:prose-base lg:prose-base">
-        I am currently seeking employment for a full time role as a software engineer, or similar job title. I am open to re-locating
-        for an exciting opportunity.
+        I am currently seeking employment for a full time role as a software engineer, or similar job title in Austin, TX.
       </p>
     </>
   ),
   aboutItems: [
-    {label: 'Location', text: 'Grand Rapids, MI', Icon: MapIcon},
+    {label: 'Location', text: 'Austin, TX', Icon: MapIcon},
     {label: 'Age', text: '23', Icon: CalendarIcon},
     {label: 'Employment Eligibility', text: 'U.S. Citizen', Icon: FlagIcon},
     {label: 'Interests', text: 'Wrestling, Pickleball, Books, Card Games', Icon: SparklesIcon},
@@ -377,7 +378,7 @@ export const testimonial: TestimonialSection = {
   testimonials: [
     {
       name: 'Nicholas Pahl, DornerWorks PM',
-      text: 'Seth came across many unexpected hurdles with the hardware and found great solutions quickly that kept development moving and prevented a second costly board spin... Seth’s work on bringing up and prototyping the TSN Development Board will enable DornerWorks to demonstrate, test, and sell our TSN IP for years to come. I could carry on about Seth’s technical skill across the TSN Development Board project and the rest of histime at DornerWorks. His ability to understand the task at hand, quickly come up to speed, effectively communicate, and efficiently complete the work makes him a model Co-op.',
+      text: 'Seth came across many unexpected hurdles with the hardware and found great solutions quickly that kept development moving and prevented a second costly board spin... Seth’s work on bringing up and prototyping the TSN Development Board will enable DornerWorks to demonstrate, test, and sell our TSN IP for years to come. I could carry on about Seth’s technical skill across the TSN Development Board project and the rest of his time at DornerWorks. His ability to understand the task at hand, quickly come up to speed, effectively communicate, and efficiently complete the work makes him a model Co-op.',
       //image: profilepic,
    }
   ],
