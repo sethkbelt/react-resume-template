@@ -11,10 +11,8 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-//import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-//import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/try1.jpeg';
-import porfolioImage1 from '../images/portfolio/trace.png';
+// import dornerworksImage from  '../images/dornerworkslogo.png';
+import testimonialImage from '../images/gvsulogo2.png';
 import porfolioImage2 from '../images/portfolio/22FinalProject.png';
 import porfolioImage3 from '../images/portfolio/163Project1.png';
 import porfolioImage4 from '../images/portfolio/163Project2.png';
@@ -24,10 +22,12 @@ import porfolioImage7 from '../images/portfolio/egr326ProjectPCB.png';
 import porfolioImage8 from '../images/portfolio/nexysA7.jpeg';
 import porfolioImage9 from '../images/portfolio/robosockeyRobot.jpg';
 import porfolioImage10 from '../images/portfolio/smartmirrorFront.png';
-import porfolioImage11 from '../images/portfolio/trace.png';
+import porfolioImage1 from '../images/portfolio/trace.png';
+import porfolioImage11 from '../images/portfolio/tracecpy.png';
 import profilepic from '../images/profilepic.jpg';
-// import dornerworksImage from  '../images/dornerworkslogo.png';
-import testimonialImage from '../images/gvsulogo2.png';
+//import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+//import TwitterIcon from '../components/Icon/TwitterIcon';
+import heroImage from '../images/try1.jpeg';
 import {
   About,
   ContactSection,
@@ -46,8 +46,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Seth Konynenbelt Portfolio',
+  description: "Seth Konynenbelt's Portfolio from an example resume",
 };
 
 /**
